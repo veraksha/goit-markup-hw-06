@@ -46,11 +46,60 @@
             <button type="button" class="button-main" data-modal-open>Order Servic</button>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button class="close-btn" type="button" data-modal-close>
-                        <svg class="close-icon" width="8" height="8">
-                            <use href="./images/close-black.svg#close-black"></use>
-                        </svg>
-                    </button>
+                    <div class="modal-container">
+                        <button class="close-btn" type="button" data-modal-close>
+                            <svg class="close-icon" width="8" height="8">
+                                <use href="./images/close-black.svg#close-black"></use>
+                            </svg>
+                        </button>
+                        <p class="modal-title" >Leave your contacts and we will call you back</p>
+                        <form name="contacts_form">
+                            <div class="form-field">
+                                <label class="form-title" for="user_name">Name</label>
+                                <input class="name-box"
+                                 type="text"
+                                  name="user_name"
+                                   id="user_name"
+                                   placeholder="">
+                                <svg class="person-icon" width="8" height="8">
+                                    <use href="./images/icons.svg#Vector"></use>
+                                </svg>
+                            </div>
+                            <div class="form-field">
+                                <label class="form-title" for="phone">Phone</label>
+                                <input class="name-box"
+                                type="text" 
+                                name="phone" 
+                                id="phone"
+                                placeholder="">
+                                <svg class="tell-icon" width="8" height="8">
+                                    <use href="./images/icons.svg#tel"></use>
+                                </svg>
+                            </div>
+                            <div class="form-field">
+                                <label class="form-title" for="mail">Email</label>
+                                <input class="name-box"
+                                 type="text" 
+                                 name="mail" 
+                                 id="mail"
+                                 placeholder="">
+                                <svg class="mail-icon" width="8" height="8">
+                                    <use href="./images/icons.svg#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="form-field">
+                                <label class="form-title" for="comment">Comment</label>
+                                <input class="comment-box" 
+                                type="text" name="comment"
+                                 id="comment" 
+                                 placeholder="Text input">
+                            </div>
+                        </form>
+                        <div>
+                            <p class="privacy">I accept the terms and conditions of the <a href="">Privacy Policy</a></p>
+                        </div>
+                        <button class="modal-sub-btn" type="submit">Send</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -360,6 +409,28 @@
                                         <use href="./images/icons.svg#linkedin-1"></use>
                                     </svg>
                                 </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="subscribe">
+                        <span class="footer-title" >Subscribe</span>
+                        <ul class="section-sub">
+                            <li>
+                                <form class="footer-form" name="subscribe_form"></form>
+                                    <label>
+                                        <input class="footer-box" 
+                                        type="text" minlength="3"
+                                        placeholder="E-mail">
+                                    </label>
+                                </form>
+                            </li>
+                            <li>
+                                <button class="subs-btn" type="submit">
+                                    Subscribe
+                                    <svg class="send-icon" width="24" height="20">
+                                            <use href="./images/icons.svg#icon-send"></use>
+                                    </svg>
+                                </button>
                             </li>
                         </ul>
                     </div>
