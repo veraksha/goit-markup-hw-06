@@ -79,7 +79,7 @@
                             <div class="form-field">
                                 <label class="form-title" for="mail">Email</label>
                                 <input class="name-box"
-                                 type="text" 
+                                 type="email" 
                                  name="mail" 
                                  id="mail"
                                  placeholder="">
@@ -89,8 +89,9 @@
                             </div>
                             <div class="form-field">
                                 <label class="form-title" for="comment">Comment</label>
-                                <textarea class="comment-box" 
-                                type="" name="comment"
+                                <textarea class="comment-box"
+                                style="width:360px; height:120px;" 
+                                name="comment"
                                  id="comment" 
                                  placeholder="Text input">
                                 </textarea>
@@ -98,8 +99,8 @@
                             <div class="modal-pr">
                                 <input type="checkbox" class="check-box" id="check_box" name="checkbox">
                                 <label class="privacy" for="check_box">I accept the terms and conditions of the
-                                    &nbsp;<p><a href="">Privacy Policy</a></p>
                                 </label>
+                                    <p class="privacy"><a class="privacy-link" href="">Privacy Policy</a></p>
                             </div>
                             <button class="modal-sub-btn" type="submit">Send</button>
                         </form>
@@ -165,9 +166,7 @@
                     <li><img src="./images/img3.jpg" alt="inspiriting places" width="360" height="300"></li>
                 </ul>
             </div>
-        </section>
-            
-        
+        </section>        
         <!-- section 4 -->
         <section class="banner-grey section-four">
             <div class="container">
@@ -374,8 +373,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        
+        </section>  
     </main>
     <footer class="footer">
         <div class="container" style="display:flex;">
@@ -418,10 +416,10 @@
                     </div>
                     <div class="subscribe">
                         <span class="footer-title" >Subscribe</span>
-                                <form class="footer-form" name="subscribe_form"></form>
+                                <form class="footer-form" name="subscribe_form">
                                     <label>
                                         <input class="footer-box" 
-                                        type="text" minlength="3"
+                                        type="email" minlength="3"
                                         placeholder="E-mail">
                                     </label>
                                     <button class="subs-btn" type="submit">
@@ -431,7 +429,6 @@
                                         </svg>
                                     </button>
                                 </form>
-                        </ul>
                     </div>
         </div>
         
